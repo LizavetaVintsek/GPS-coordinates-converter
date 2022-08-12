@@ -1,0 +1,8 @@
+# created by virtualenv automatically
+LICENSE
+path.txt
+Scripts/*
+Lib/*
+.idea/*
+pyenv.cfg
+
