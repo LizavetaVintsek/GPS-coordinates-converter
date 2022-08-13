@@ -37,7 +37,6 @@ else:
     file.save("Saved coordinates.xlsx")
 
 def convert_DDtoDMS():
-
     try:
         if latDDtoDMS.get() == '':
             return messagebox.showerror('Input value error', 'Error: Please, enter the DD latitude value!')
@@ -118,12 +117,12 @@ def convert_DDtoDMS():
     map_widget_sat.set_tile_server("https://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}&s=Ga", max_zoom=22)
     x = float(latDDtoDMS.get())
     y = float(longDDtoDMS.get())
-    map_widget_sat.set_position(x, y)
+    map_widget_sat.set_position(x, y, marker=True)
     map_widget_sat.set_zoom(15)
     map_widget_sat.grid(row=0, column=0, padx=5, pady=5)
     map_widget_norm = tkintermapview.TkinterMapView(map_frame, width=815, height=400)
     map_widget_norm.set_tile_server("https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga", max_zoom=22)
-    map_widget_norm.set_position(x, y)
+    map_widget_norm.set_position(x, y, marker=True)
     map_widget_norm.set_zoom(15)
     map_widget_norm.grid(row=0, column=1, padx=5, pady=5)
 
@@ -383,12 +382,12 @@ def convert_DMStoDD():
     map_widget_sat.set_tile_server("https://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}&s=Ga", max_zoom=22)
     x = float(latitude_DD_output.cget('text'))
     y = float(longitude_DD_output.cget('text'))
-    map_widget_sat.set_position(x, y)
+    map_widget_sat.set_position(x, y, marker=True)
     map_widget_sat.set_zoom(15)
     map_widget_sat.grid(row=0, column=0, padx=5, pady=5)
     map_widget_norm = tkintermapview.TkinterMapView(map_frame, width=815, height=400)
     map_widget_norm.set_tile_server("https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga", max_zoom=22)
-    map_widget_norm.set_position(x, y)
+    map_widget_norm.set_position(x, y, marker=True)
     map_widget_norm.set_zoom(15)
     map_widget_norm.grid(row=0, column=1, padx=5, pady=5)
 
@@ -530,12 +529,12 @@ map_label =customtkinter.CTkLabel(label_frame, text='Searched localisation on ma
 
 map_widget_sat = tkintermapview.TkinterMapView(map_frame, width=815, height=400)
 map_widget_sat.set_tile_server("https://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}&s=Ga", max_zoom=22)
-map_widget_sat.set_position(50.0612, 19.9377)
+map_widget_sat.set_position(50.0612, 19.9377, marker=True)
 map_widget_sat.set_zoom(15)
 map_widget_sat.grid(row=0, column=0, padx=5, pady=5)
 map_widget_norm = tkintermapview.TkinterMapView(map_frame, width=815, height=400)
 map_widget_norm.set_tile_server("https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga", max_zoom=22)
-map_widget_norm.set_position(50.0612, 19.9377)
+map_widget_norm.set_position(50.0612, 19.9377, marker=True)
 map_widget_norm.set_zoom(15)
 map_widget_norm.grid(row=0, column=1, padx=5, pady=5)
 
