@@ -167,16 +167,16 @@ def save_DDtoDMS():
     file=openpyxl.load_workbook("Saved coordinates.xlsx")
     sheet=file.active
     sheet.cell(column=1,row=sheet.max_row+1,value=latDD1)
-    sheet.cell(column=2,row=sheet.max_row,value=latDMS1)
-    sheet.cell(column=3,row=sheet.max_row,value=latDD1)
-    sheet.cell(column=4,row=sheet.max_row,value=latDMS1)
+    sheet.cell(column=2,row=sheet.max_row,value=longDD1)
+    sheet.cell(column=3,row=sheet.max_row,value=latDMS1)
+    sheet.cell(column=4,row=sheet.max_row,value=longDMS1)
     file.save("Saved coordinates.xlsx")
 
-    popup1 = Toplevel(root)
+    popup1 = customtkinter.CTkToplevel(root)
     popup1.title('Confirmation message')
-    popup1.geometry('500x50')
-    pop1label = tkinter.Label(popup1, text="Saved successfully", font=('Roboto Medium',11))
-    pop1label.pack(fill='x', padx=50, pady=5)
+    popup1.geometry('300x50')
+    pop1label = customtkinter.CTkLabel(popup1, text="Saved successfully", text_font=('Roboto Medium',11))
+    pop1label.pack(fill='x', padx=5, pady=5)
     popup1.after(1500, lambda: popup1.destroy())
 
     save_button_DD['state'] = tkinter.DISABLED
@@ -186,11 +186,11 @@ def save_DDtoDMS():
 
 def save_DDtoDMS_message1():
     if (save_button_DD['state'] == tkinter.DISABLED):
-        popup1 = Toplevel(root)
-        popup1.geometry('500x50')
+        popup1 = customtkinter.CTkToplevel(root)
+        popup1.geometry('350x50')
         popup1.title('Error message')
-        pop1label = Label(popup1, text="Convert new data to activate Save button", font=('Roboto Medium',11))
-        pop1label.pack(fill='x', padx=50, pady=5)
+        pop1label = customtkinter.CTkLabel(popup1, text="Convert new data to activate Save button", text_font=('Roboto Medium',11))
+        pop1label.pack(fill='x', padx=5, pady=5)
         popup1.after(2000, lambda: popup1.destroy())
 
 def convert_DMStoDD():
@@ -439,11 +439,11 @@ def save_DMStoDD():
     sheet.cell(column=4,row=sheet.max_row,value=longDMS2)
     file.save("Saved coordinates.xlsx")
 
-    popup2 = Toplevel(root)
-    popup2.geometry('500x50')
+    popup2 = customtkinter.CTkToplevel(root)
+    popup2.geometry('300x50')
     popup2.title('Confirmation message')
-    pop2label = tkinter.Label(popup2, text="Saved successfully", font=('Roboto Medium',11))
-    pop2label.pack(fill='x', padx=50, pady=5)
+    pop2label = customtkinter.CTkLabel(popup2, text="Saved successfully", text_font=('Roboto Medium',11))
+    pop2label.pack(fill='x', padx=5, pady=5)
     popup2.after(1500, lambda: popup2.destroy())
 
     save_button_DMS['state'] = tkinter.DISABLED
@@ -453,11 +453,11 @@ def save_DMStoDD():
 
 def save_DMStoDD_message2():
     if (save_button_DMS['state'] == tkinter.DISABLED):
-        popup2 = Toplevel(root)
-        popup2.geometry('500x50')
+        popup2 = customtkinter.CTkToplevel(root)
+        popup2.geometry('350x50')
         popup2.title('Error message')
-        pop2label = Label(popup2, text="Convert new data to activate Save button", font=('Roboto Medium',11))
-        pop2label.pack(fill='x', padx=50, pady=5)
+        pop2label = customtkinter.CTkLabel(popup2, text="Convert new data to activate Save button", text_font=('Roboto Medium',11))
+        pop2label.pack(fill='x', padx=5, pady=5)
         popup2.after(2000, lambda: popup2.destroy())
 
 convert_frame = customtkinter.CTkFrame(root)
