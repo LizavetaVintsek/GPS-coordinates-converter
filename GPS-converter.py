@@ -1,3 +1,4 @@
+#installed packages: openpyxl,xlrd, pathlib2, tkintermapview, customtkinter
 import tkinter
 from tkinter import *
 from tkinter import BOTH
@@ -23,18 +24,17 @@ root.iconbitmap('logo-gps.ico')
 root.geometry('1100x600+10+10')
 root.resizable(0,0)
 
-file = pathlib2.Path("Saved coordinates.xlsx")
-if file.exists():
-    pass
-else:
-    file=Workbook()
-    sheet=file.active
+saved_coord = pathlib2.Path("Saved coordinates.xlsx")
+
+if not saved_coord.exists():
+    saved_coord=Workbook()
+    sheet=saved_coord.active
     sheet['A1'] = 'DD Latitude'
     sheet['B1'] = 'DD Longitude'
     sheet['C1'] = 'DMS Latitude'
     sheet['D1'] = 'DMS Longitude'
 
-    file.save("Saved coordinates.xlsx")
+    saved_coord.save("Saved coordinates.xlsx")
 
 def convert_DDtoDMS():
     try:
@@ -163,13 +163,13 @@ def save_DDtoDMS():
     print(latDMS1)
     print(longDMS1)
 
-    file=openpyxl.load_workbook("Saved coordinates.xlsx")
-    sheet=file.active
+    saved_coord=openpyxl.load_workbook("Saved coordinates.xlsx")
+    sheet=saved_coord.active
     sheet.cell(column=1,row=sheet.max_row+1,value=latDD1)
     sheet.cell(column=2,row=sheet.max_row,value=longDD1)
     sheet.cell(column=3,row=sheet.max_row,value=latDMS1)
     sheet.cell(column=4,row=sheet.max_row,value=longDMS1)
-    file.save("Saved coordinates.xlsx")
+    saved_coord.save("Saved coordinates.xlsx")
 
     popup1 = customtkinter.CTkToplevel(root)
     popup1.title('Confirmation message')
@@ -430,13 +430,13 @@ def save_DMStoDD():
     print(longDD2)
     print(longDMS2)
 
-    file=openpyxl.load_workbook("Saved coordinates.xlsx")
-    sheet=file.active
+    saved_coord=openpyxl.load_workbook("Saved coordinates.xlsx")
+    sheet=saved_coord.active
     sheet.cell(column=1,row=sheet.max_row+1,value=latDD2)
     sheet.cell(column=2,row=sheet.max_row,value=longDD2)
     sheet.cell(column=3,row=sheet.max_row,value=latDMS2)
     sheet.cell(column=4,row=sheet.max_row,value=longDMS2)
-    file.save("Saved coordinates.xlsx")
+    saved_coord.save("Saved coordinates.xlsx")
 
     popup2 = customtkinter.CTkToplevel(root)
     popup2.geometry('300x50')
