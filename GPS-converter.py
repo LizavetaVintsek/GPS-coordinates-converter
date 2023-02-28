@@ -538,7 +538,7 @@ map_widget_norm.set_position(50.0612, 19.9377, marker=True)
 map_widget_norm.set_zoom(15)
 map_widget_norm.grid(row=0, column=1, padx=5, pady=5)
 
-customtkinter.CTkLabel(map_frame, text='Satelite Google map', text_font=("Roboto Medium", 12)).grid(row=1, column=0, padx=2, pady=2)
+customtkinter.CTkLabel(map_frame, text='Satellite Google map', text_font=("Roboto Medium", 12)).grid(row=1, column=0, padx=2, pady=2)
 customtkinter.CTkLabel(map_frame, text='Normal Google map', text_font=("Roboto Medium", 12)).grid(row=1, column=1, padx=2, pady=2)
 
 root.mainloop()
