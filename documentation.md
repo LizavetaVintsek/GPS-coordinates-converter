@@ -1,6 +1,6 @@
 # Start screen
 
-![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS-converter_start_screen.png)
+![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_start_screen.png)
 
 When the GPS coordinates converter application is just opened, all input and output fields are empty, the maps visualize the Kraków Old Town (the red marker has pinned to the localisation with the coordinates: 50.0612, 19.9377).
 # The UI consists of three main parts:
@@ -12,6 +12,7 @@ contains fields and buttons that allow user to convert coordinates from DMS to D
 contains the maps (Satellite and Normal Google maps) that visualise localisation corresponding to the converted coordinates
 
 The application with valid input and output
+
 ![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS-converter_after_conversion.png)
 
 # 1. The functionality of the ‘Convert coordinates from DD to DMS’ part:
@@ -19,7 +20,8 @@ The application with valid input and output
 User can enter the DD latitude and longitude into the appropriate dark grey fields. Provided coordinates must contain only numbers, to separate whole and decimal numbers use the dot. The valid DD latitude must range from -90 to 90 (inclusive), the valid DD longitude must range from -180 to 180 (inclusive). After entering valid DD latitude and longitude click the ‘Convert DD to DMS’ button to convert the provided coordinates into the DMS format.
 1.2. Save (DD to DMS part)
 User can save the converted coordinates in both DD and DMS formats to the 'Saved coordinates.xlsx' file by pressing the 'Save to Excel' button. The confirmation message ‘Saved successfully’ will appear for 1.5 sec and will close automatically. To eliminate multiple savings of the same data, the 'Save to Excel' button will be disabled after the first press. To enable the 'Save to Excel' button, enter and convert new coordinates. The 'Saved coordinates.xlsx' must be closed during saving.
-![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/ GPS_converter_save_confirmation_message.png)
+
+![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_save_confirmation_message.png)
 
 1.3. Reset (DD to DMS part)
 User can empty the DD latitude and DD longitude fields by clicking the ‘Reset’ button. The DD latitude and DD longitude fields can be also deleted/corrected manually by clicking on the appropriate fields and using a keyboard.
@@ -50,7 +52,8 @@ User can empty the DMS latitude and DMS longitude fields by clicking the ‘Rese
 1.2.2. If the user left the DD longitude field empty and clicks the ‘Save to Excel’ button the error message ‘Error: Please, enter the DD longitude value!’ will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button. 
 1.2.3. If the user enters the DD longitude and latitude but doesn’t convert it by clicking the ‘Convert DD to DMS’ button and clicks the ‘Save to Excel’ button the error message ‘Error: Please, convert the data!’ will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
 1.2.4. If the user tries to save previously saved converted coordinates by clicking again ‘Save to Excel’ button the error message ‘Convert new data to activate Save button’ will appear for 2 sec and will close automatically.
-![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/ GPS_converter_save_error_message.png)
+
+![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_save_error_message.png)
 
 2.1. Pop-up messages in the Convert (DMS to DD part) functionality
 2.1.1. If the user left the DMS latitude field empty and clicks the ‘Convert DMS to DD’ button (valid DMS longitude entered and all direction radio buttons selected) the error message ‘Error: Please, enter the DMS latitude value!’ will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
