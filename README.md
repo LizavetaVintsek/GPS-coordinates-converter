@@ -4,7 +4,7 @@ The program allows you:
 - to save converted coordinates in both formats to the .xlsx file;
 - to visualise localisation that corresponds to converted coordinates on the maps (Satellite and normal Google maps).
 
-![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS-converter.png)
+![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_start_screen.png)
 
 To convert coordinates:
 1. Enter the latitude and longitude in the appropriate fields. While converting DMS to DD coordinates, choose the direction (N or S, E or W).
@@ -19,5 +19,4 @@ To enter new coordinates you can:
 - use the 'Reset' button, to delete data from all fields and then enter the coordinates into the input field manually, or 
 - change the input field manually.
 
-The complete documentation is stored in the coordinates_converter_documentation.md file. 
-
+The complete documentation is stored in the documentation.md file. 
