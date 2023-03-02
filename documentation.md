@@ -171,6 +171,6 @@ User can empty the DMS latitude and DMS longitude fields by clicking the ‘Rese
 
 2.2.3. If the user fills in the DMS longitude and latitude fields but doesn’t convert it by clicking the ‘Convert DMS to DD’ button and clicks the ‘Save to Excel’ button the error message ‘Error: Please, convert the data!’ will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
   
-<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/.png" width=60% height=60%>
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_save_error_not_converted_DMS.png" width=60% height=60%>
 
 2.2.4. If the user tries to save previously saved converted coordinates by clicking again ‘Save to Excel’ button the error message ‘Convert new data to activate Save button’ will appear for 2 sec and will close automatically.
