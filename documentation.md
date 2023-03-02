@@ -4,7 +4,7 @@ The application is built using Tkinter which is Python's standard GUI (Graphical
 
 # Start screen
 
-<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_after_conversion.png"  width=50% height=50%>
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_start_screen.png" width=60% height=60%>
 
 When the GPS coordinates converter application is just opened, all input and output fields are empty, the maps visualize the Kraków Old Town (the red marker has pinned to the localisation with the coordinates: 50.0612, 19.9377).
 # The UI consists of three main parts:
@@ -16,9 +16,8 @@ contains fields and buttons that allow user to convert coordinates from DMS to D
 contains the maps (Satellite and Normal Google maps) that visualise localisation corresponding to the converted coordinates
 
 <sub>*The application with valid input and output*<sub>
-
-![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_after_conversion.png)
-
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_after_conversion.png" width=60% height=60%>
+  
 ## 1. The functionality of the ‘Convert coordinates from DD to DMS’ part:
 1.1. Convert (DD to DMS part)
 
@@ -29,8 +28,8 @@ User can enter the DD latitude and longitude into the appropriate dark grey fiel
 User can save the converted coordinates in both DD and DMS formats to the 'Saved coordinates.xlsx' file by pressing the 'Save to Excel' button. The confirmation message ‘Saved successfully’ will appear for 1.5 sec and will close automatically. To eliminate multiple savings of the same data, the 'Save to Excel' button will be disabled after the first press. To enable the 'Save to Excel' button, enter and convert new coordinates. The 'Saved coordinates.xlsx' must be closed during saving.
 
 <sub>*‘Saved successfully’ confirmation pop-up message*<sub>
-![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_save_confirmation_message.png)
-
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_save_confirmation_message.png" width=60% height=60%>
+  
 1.3. Reset (DD to DMS part)
 
 User can empty the DD latitude and DD longitude fields by clicking the ‘Reset’ button. The DD latitude and DD longitude fields can be also deleted/corrected manually by clicking on the appropriate fields and using a keyboard.
@@ -60,17 +59,29 @@ User can empty the DMS latitude and DMS longitude fields by clicking the ‘Rese
 
 1.1.1. If the user left the DD latitude field empty and clicks the ‘Convert DD to DMS’ button (valid DD longitude entered) the error message ‘Error: Please, enter the DD latitude value!’ will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
 
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_empty_DD_latitude.png" width=60% height=60%> 
+  
 1.1.2. If the user enters into the DD latitude field any special characters (except for dot), and/or letters, and/or spaces (except for terminal spaces) and clicks the ‘Convert DD to DMS’ button (valid DD longitude entered) the error message 'Error: DD latitude should be a number!' will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
+  
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_invalid_characters_DD_latitude.png" width=60% height=60%>  
 
 1.1.3. If the user enters the DD latitude that is less than -90 or greater than 90 and clicks the ‘Convert DD to DMS’ button (valid DD longitude entered) the error message 'Error: DD latitude should be between -90 and 90!' will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
+  
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_invalid_DD_latitude.png" width=60% height=60%>  
 
 **DD longitude field**
 
 1.1.4. If the user left the DD longitude field empty and clicks the ‘Convert DD to DMS’ button (valid DD latitude entered) the error message ‘Error: Please, enter the DD longitude value!’ will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
+  
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_empty_DD_longitude.png" width=60% height=60%> 
 
 1.1.5. If the user enters into the DD longitude field any special characters (except for dot), letters, or spaces (except for terminal spaces) and clicks the ‘Convert DD to DMS’ button (valid DD latitude entered) the error message 'Error: DD longitude should be a number!' will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
+  
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_invalid_characters_DD_longitude.png" width=60% height=60%>   
 
 1.1.6. If the user enters the DD longitude that is less than -180 or greater than 180 and clicks the ‘Convert DD to DMS’ button (valid DD latitude entered) the error message 'Error: DD longitude should be between -180 and 180!' will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
+
+<img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_invalid_DD_longitude.png" width=60% height=60%>   
 
 ### 1.2. Pop-up messages in the Save (DD to DMS part) functionality
 
