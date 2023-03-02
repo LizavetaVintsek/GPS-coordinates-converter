@@ -188,7 +188,7 @@ def save_DDtoDMS_message1():
         popup1 = customtkinter.CTkToplevel(root)
         popup1.geometry('350x50')
         popup1.title('Error message')
-        pop1label = customtkinter.CTkLabel(popup1, text="Convert new data to activate Save button", text_font=('Roboto Medium',11))
+        pop1label = customtkinter.CTkLabel(popup1, text="Convert new data to activate 'Save to Excel'  button", text_font=('Roboto Medium',11))
         pop1label.pack(fill='x', padx=5, pady=5)
         popup1.after(2000, lambda: popup1.destroy())
 
@@ -219,7 +219,7 @@ def convert_DMStoDD():
     if '' in latitudeDD:
         pass
     else:
-        messagebox.showerror('Input value error', 'Error: DMS latitude should be entered in the format XX°XX\'XX\"!')
+        messagebox.showerror('Input value error', 'Error: DMS latitude should be entered in the format DD°MM\'SS\"!')
 
     try:
         if float(latitudeDD[0])>90:
@@ -283,7 +283,7 @@ def convert_DMStoDD():
     if '' in longitudeDD:
         pass
     else:
-        messagebox.showerror('Input value error', 'Error: DMS longitude should be entered in the format XX°XX\'XX\"!')
+        messagebox.showerror('Input value error', 'Error: DMS longitude should be entered in the format DD°MM\'SS\"!')
 
     try:
         if float(longitudeDD[0])>180:
@@ -336,7 +336,7 @@ def convert_DMStoDD():
         d_lat = float(latitudeDD[0])
         dms_lat = d_lat
     else:
-        messagebox.showerror('Input value error', 'Error: DMS latitude should be entered in the format XX°XX\'XX\"!')
+        messagebox.showerror('Input value error', 'Error: DMS latitude should be entered in the format DD°MM\'SS\"!')
 
     if directionNS.get() == '1':
         dms_direction_lat = "{:.5f}".format(dms_lat)
@@ -364,7 +364,7 @@ def convert_DMStoDD():
         d_long = float(longitudeDD[0])
         dms_long = d_long
     else:
-        messagebox.showerror('Input value error', 'Error: DMS longitude should be entered in the format XX°XX\'XX\"!')
+        messagebox.showerror('Input value error', 'Error: DMS longitude should be entered in the format DD°MM\'SS\"!')
 
     if directionEW.get() == '1':
         dms_direction_long = "{:.5f}".format(dms_long)
@@ -455,7 +455,7 @@ def save_DMStoDD_message2():
         popup2 = customtkinter.CTkToplevel(root)
         popup2.geometry('350x50')
         popup2.title('Error message')
-        pop2label = customtkinter.CTkLabel(popup2, text="Convert new data to activate Save button", text_font=('Roboto Medium',11))
+        pop2label = customtkinter.CTkLabel(popup2, text="Convert new data to activate 'Save to Excel' button", text_font=('Roboto Medium',11))
         pop2label.pack(fill='x', padx=5, pady=5)
         popup2.after(2000, lambda: popup2.destroy())
 
