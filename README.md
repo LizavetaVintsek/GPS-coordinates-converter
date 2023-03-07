@@ -4,7 +4,7 @@
 
 The application is built using Tkinter which is Python's standard GUI (Graphical User Interface) package. The application is offline and can be used only after downloading the GPS-converter.py and logo-gps.ico files on the user's computer. User must have preinstalled Python and Python interpreter (the application is created using Python 3.10.4 and PyCharm Edu 2021.3.2 as an interpreter). The stability of the application using other versions of Python and other interpreters is not tested. To open the application the user must open GPS-converter.py file in the Python interpreter and run it. Additional packages that must be installed are openpyxl, xlrd, pathlib2, tkintermapview, customtkinter.
 
-##The program allows you:
+## The program allows you:
 - to convert GPS coordinates from DD (decimal degrees) format to DMS (degrees, minutes, seconds) format and vice versa; 
 - to save converted coordinates in both formats to the .xlsx file;
 - to visualise localisation that corresponds to converted coordinates on the maps (Satellite and Normal Google maps).
