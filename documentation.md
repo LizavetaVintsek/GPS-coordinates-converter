@@ -1,12 +1,9 @@
-## Installing
-
-The application is built using Tkinter which is Python's standard GUI (Graphical User Interface) package. The application is offline and can be used only after downloading the GPS-converter.py and logo-gps.ico files on the user's computer. To open the application the user must have preinstalled Python and Python interpreter (the application is created using Python 3.10.4 and PyCharm Edu 2021.3.2 as an interpreter). The stability of the application using other versions of Python and other interpreters is not tested. Additional packages that must be installed are openpyxl, xlrd, pathlib2, tkintermapview, customtkinter.
-
 # Start screen
 
 <img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_start_screen.png" width=60% height=60%>
 
 When the GPS coordinates converter application is just opened, all input and output fields are empty, the maps visualize the Kraków Old Town (the red marker has pinned to the localisation with the coordinates: 50.0612, 19.9377).
+
 # The UI consists of three main parts:
 1.	Convert coordinates from DD to DMS 
 contains fields and buttons that allow user to convert coordinates from DD to DMS format, save converted coordinates, and reset the input fields
