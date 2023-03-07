@@ -63,7 +63,7 @@ User can empty the DMS latitude and DMS longitude fields by clicking the ‘Rese
 
 <img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_empty_DD_latitude.png" width=60% height=60%> 
   
-1.1.2. If the user enters into the DD latitude field any special characters (except for dot), and/or letters, and/or spaces (except for terminal spaces) and clicks the ‘Convert DD to DMS’ button (valid DD longitude entered) the error message 'Error: DD latitude should be a number!' will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
+1.1.2. If the user enters into the DD latitude field any special characters (except for one dot), and/or letters, and/or spaces (except for initial and terminal spaces) and clicks the ‘Convert DD to DMS’ button (valid DD longitude entered) the error message 'Error: DD latitude should be a number!' will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
   
 <img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_invalid_characters_DD_latitude.png" width=60% height=60%>  
 
@@ -77,7 +77,7 @@ User can empty the DMS latitude and DMS longitude fields by clicking the ‘Rese
   
 <img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_empty_DD_longitude.png" width=60% height=60%> 
 
-1.1.5. If the user enters into the DD longitude field any special characters (except for dot), letters, or spaces (except for terminal spaces) and clicks the ‘Convert DD to DMS’ button (valid DD latitude entered) the error message 'Error: DD longitude should be a number!' will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
+1.1.5. If the user enters into the DD longitude field any special characters (except for one dot), letters, or spaces (except for terminal spaces) and clicks the ‘Convert DD to DMS’ button (valid DD latitude entered) the error message 'Error: DD longitude should be a number!' will appear. The user can close the error message by clicking the ‘OK’ button or the close (cross) button.
   
 <img src="https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_invalid_characters_DD_longitude.png" width=60% height=60%>   
 
