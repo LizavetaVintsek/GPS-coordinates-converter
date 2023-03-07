@@ -20,3 +20,7 @@ To enter new coordinates you can:
 - change the input field manually.
 
 The complete documentation is stored in the documentation.md file. 
+
+The user story, test cases (Zephyr Scale) and bug reports are in Jira 
+
+*https://lizavetavintsek.atlassian.net/jira/software/c/projects/CCT/boards/2/backlog?issueLimit=100*
