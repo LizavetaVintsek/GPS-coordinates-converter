@@ -9,7 +9,7 @@ The application is built using Tkinter which is Python's standard GUI (Graphical
 - to save converted coordinates in both formats to the .xlsx file;
 - to visualise localisation that corresponds to converted coordinates on the maps (Satellite and Normal Google maps).
 
-![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/GPS_converter_start_screen.png)
+![alt text](https://github.com/LizavetaVintsek/GPS-coordinates-converter/blob/master/UI_images/GPS_converter_start_screen.png)
 
 To convert coordinates:
 1. Enter the latitude and longitude in the appropriate fields. While converting DMS to DD coordinates, choose the direction (N or S, E or W).
